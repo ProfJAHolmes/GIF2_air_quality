@@ -1,5 +1,10 @@
-overview
+overview-and-getting-help
 tasks
 data-download
 reading-data-into-r
+plotting-and-data-analysis
+descriptive-statistics-25-marks-in-total
+time-series-plot-25-marks-in-total
+difference-between-sites-25-marks-in-total
+difference-between-the-two-variables
 what-to-hand-in
