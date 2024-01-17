@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>2 Tasks | GEOG0014 Air Quality Practical</title>
   <meta name="description" content="2 Tasks | GEOG0014 Air Quality Practical" />
-  <meta name="generator" content="bookdown 0.31 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.37 and GitBook 2.6.7" />
 
   <meta property="og:title" content="2 Tasks | GEOG0014 Air Quality Practical" />
   <meta property="og:type" content="book" />
@@ -55,6 +55,10 @@
 
 
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 <link rel="stylesheet" href="assets/custom.css" type="text/css" />
 </head>
@@ -111,7 +115,7 @@
 <p>The tasks are described below. You should present the results of your calculations and plots, as indicated, together with any comments on the data. Make sure that your comments adhere to the length limits specified. This is an independent piece of work. Although you are welcome to discuss the exercise with your colleagues, all of the analyses, plots and answers to questions should be your own work.</p>
 <div id="data-download" class="section level2 hasAnchor" number="2.1">
 <h2><span class="header-section-number">2.1</span> Data download<a href="tasks.html#data-download" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Download data for the calendar year 2020 from the Defra data selector for both of the Camden monitoring stations by clicking <a href="https://uk-air.defra.gov.uk/data/data_selector_service?show=auto&amp;submit=Reset&amp;f_limit_was=1"><strong>here</strong></a> First, select ‘Search hourly networks’ and then, for the various options, choose as follows: data type = daily mean; date range = the year in question, monitoring sites = local authority and then London Borough of Camden (choose Camden Kerbside and London Bloomsbury from the list) select pollutants = by monitoring network and AURN and then select the following two variables from the drop-down list: PM10 particulate matter (hourly measured) and PM2.5 Particulate matter (hourly measured). Finally, choose to have the data emailed to you as a csv file. Once received, save the file onto your N:/ drive (or your desktop if using your own computer). Before reading the dataset into R, you will need to perform a basic clean-up to replace the entry in those cells for which there are no values (marked ‘No data’) with empty cells, using the search and replace function in excel.</p>
+<p>Download data for the calendar year 2017 from the Defra data selector for both of the Camden monitoring stations by clicking <a href="https://uk-air.defra.gov.uk/data/data_selector_service?show=auto&amp;submit=Reset&amp;f_limit_was=1"><strong>here</strong></a> First, select ‘Search hourly networks’ and then, for the various options, choose as follows: data type = daily mean; date range = the year in question, monitoring sites = local authority and then London Borough of Camden (choose Camden Kerbside and London Bloomsbury from the list) select pollutants = by monitoring network and AURN and then select the following two variables from the drop-down list: PM10 particulate matter (hourly measured) and PM2.5 Particulate matter (hourly measured). You can either chose to view the data on screen and then copy and paste them into excel OR have the data emailed to you as a csv file. Note that thew emnail option has not been working so copying and pasting from the on-screen option may be best. If you do chose this option, make sure that the data fro the two sites appear in separate columns.Once received, save the file onto your N:/ drive (or your desktop if using your own computer). Before reading the dataset into R, you will need to perform a basic clean-up to replace the entry in those cells for which there are no values (marked ‘No data’) with empty cells, using the search and replace function in excel.</p>
 </div>
 <div id="reading-data-into-r" class="section level2 hasAnchor" number="2.2">
 <h2><span class="header-section-number">2.2</span> Reading data into R<a href="tasks.html#reading-data-into-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -131,7 +135,7 @@
 </div>
 <div id="difference-between-sites-25-marks-in-total" class="section level3 hasAnchor" number="2.3.3">
 <h3><span class="header-section-number">2.3.3</span> Difference between sites [25 marks in total]<a href="tasks.html#difference-between-sites-25-marks-in-total" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>You will now investigate further any differences or similarities between the two Camden sites, using the same variable (i.e. those data plotted as a time series above).</p>
+<p>You will now investigate further any differences or similarities between the two Camden sites, using either PM10 or PM2.5 (you only need to make one plot).</p>
 <p>First, plot the data for the two sites on a bivariate scatter plot, clearly noting which axis represents which site by appropriate labelling. Then fit a linear regression line through the dataset. Give the regression equation for the regression line and calculate the correlation coefficient between the two variables.</p>
 <p>Comment critically on the findings [5 lines]</p>
 </div>
